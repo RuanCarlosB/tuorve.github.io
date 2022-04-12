@@ -1,7 +1,0 @@
--Interface boa
--os usuarios tem uma conta
--os usuarios tem um carrinho de compra
--os usuarios podem remover itens do carrinho
--os usuarios pedem a encomenda
--os usuarios podem ver o acomponhamento da entrega
--os podem deixar comentarios sobre o produto

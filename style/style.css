@@ -69,7 +69,7 @@ body{
     display: flex;
     flex-direction:column ;
     border-radius: 100%;
-    font-size: 1.3vmax;
+    font-size: 1.3vw;
     background: none;
     color: #378400;
     margin-right: 5px;
@@ -126,7 +126,7 @@ body{
 }
 .img-exclusivo p{
     position: absolute;
-    font-size: 3vmax;
+    font-size: 3vw;
     margin: 0 5px;
     color: #fff;
     text-shadow: 1px 1px 5px #000;
@@ -171,10 +171,10 @@ body{
     color: #fff;
     background-color: #378400;
     border: none;
-    padding: 10px;
+    padding: 1vw;
     height: 6vw;
     width: 18vw;
-    font-size: 1.6vmax;
+    font-size: 1.6vw;
     margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0px 0px 20px #378400;
@@ -196,7 +196,7 @@ body{
     padding: 10px;
 }
 .pacotes h2{
-    font-size: 2.8vmax;
+    font-size: 2.8vw;
     text-align: center;
     color: #fff;
     text-shadow:  0 0 5px #000;
@@ -235,13 +235,13 @@ body{
     cursor: pointer;
 }
 .pacotes .destinos div p{
-    font-size: 1vmax;
+    font-size: 1vw;
 }
 .preco{
     color: #54c900;
 }
 .pacotes .destinos div span{
-    font-size: .8vmax;
+    font-size: .8vw;
     color: #275e00;
 }
 .fundo-pacotes{
@@ -256,7 +256,7 @@ body{
     height: max-content;
 }
 .turismo h1{
-    font-size: 4vmax;
+    font-size: 4vw;
     text-align: center;
     color: #275e00;
     margin-bottom: 5vw;
@@ -301,7 +301,7 @@ body{
     position: relative;
 }
 .turismo-parte1 p{
-    font-size: 3vmax;
+    font-size: 3vw;
     width: 50%;
     position: absolute;
     right: 0;
@@ -318,7 +318,7 @@ body{
 }
 .turismo-parte2 p{
     position: relative;
-    font-size: 3vmax;
+    font-size: 3vw;
     width: 50%;
     left: 0;
     text-align: left;
@@ -372,7 +372,7 @@ body{
     margin-top:40vw;
 }
 .turismo-parte3 p{
-    font-size: 3vmax;
+    font-size: 3vw;
     position: absolute;
     text-align: center;
     top: -10vw;
@@ -407,7 +407,7 @@ body{
     width: 100%;
     height: 10vw;
     text-align: center;
-    font-size: 5vmax;
+    font-size: 5vw;
     color: #fff;
 }
 .titulo-pacotes h3{
@@ -423,9 +423,10 @@ body{
     width: 90vw;
     margin: 0 auto;
     background-color: #dfffc85b;
-    height: 60vh;
+    max-height: 400px;
+    min-height: 200px;
     border-radius: 20px;
-    margin-top: 80px;
+    margin-top: 5vw;
     position: relative;
 }
 .apresentacao{
@@ -433,38 +434,38 @@ body{
 }
 
 .apresentacao .logo1{
-    width: 250px;
-    height: 250px;
     border-radius: 50%;
 }
 .apresentacao .logo1 img{
-    height: 250px;
-    width: 250px;
+    height: 25vw;
+    width: 25vw;
     border-radius: 50%;
 }
 .txt-apresentacao{
-    font-size: 2vmax;
+    font-size: 2vw;
     text-align: left;
     margin: 5vw 2vw;
     color: #275e00;
 }
+.txt-apresentacao p{
+    font-size: 1.5vw;
+}
+
 .txt-apresentacao span{
     color: #48ad00;
 }
 
-
 .slogan{
     bottom: 5vw;
     text-align: center;
-    font-size: 3vmax;
+    font-size: 2vw;
     max-width: 100%;
-    color: #275e00;
     font-weight: 100;
 }
 .slogan span{
     bottom: 5vw;
     text-align: center;
-    font-size: 4vmax;
+    font-size: 4vw;
     max-width: 100%;
     font-weight: 100;
     color: #48ad00;
@@ -474,5 +475,60 @@ body{
     text-align: center;
     position: absolute;
     bottom: 1vw;
+    height: 12vw;
+    max-height: 200px;
     width: 100%;
+    background-color: #2d6b00;
+    border-radius: 0 0 10px 10px;
+}
+
+footer{
+    margin: 5vw 0;
+    text-align: center;
+}
+
+footer h2{
+    font-size: 1.8vw;
+    color: #1c4300;
+}
+footer h3{
+    font-size: 1vw;
+    color: #1f4a00;
+}
+
+.contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4vw;
+    padding-bottom: 2vw;
+    color: #2d6d00b7;
+
+}
+
+.contato p{
+    margin-right: 20px;
+}
+
+.direitos p{
+    color: #2d6d00b7;
+    font-size: 1.8vw;
+}
+
+.direitos .obs{
+    font-size: 1vw;
+}
+
+@media (max-width: 720px) {
+    .fundo-apresentacao{
+        min-height: 100px;
+    }
+    .pacotes .destinos img{
+        height: 60%;
+        width: 100%;
+        max-height: 250px;
+        min-width: 0;
+        max-width: 400px;
+        border-radius: 10px;
+     }
 }
