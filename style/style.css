@@ -31,6 +31,9 @@ body{
     border-radius: 10px;
     opacity: .9;
 }
+#butoes-nav{
+    display: none;
+}
 
 .nav-header{
     width: 85%;
@@ -213,12 +216,12 @@ body{
     border-radius: 10px;
 }
 .pacotes .destinos img{
-   height: 60%;
-   width: 100%;
-   max-height: 250px;
-   min-width: 100px;
-   max-width: 400px;
-   border-radius: 10px;
+    height: 60%;
+    width: 100%;
+    max-height: 250px;
+    min-width: 0;
+    max-width: 400px;
+    border-radius: 10px;
 }
 .pacotes .destinos div{
     backdrop-filter: blur(5px);
@@ -433,10 +436,10 @@ body{
     display: flex;
 }
 
-.apresentacao .logo1{
+.logo1{
     border-radius: 50%;
 }
-.apresentacao .logo1 img{
+.logo1 img{
     height: 25vw;
     width: 25vw;
     border-radius: 50%;
@@ -520,8 +523,102 @@ footer h3{
 }
 
 @media (max-width: 720px) {
+    .bar-header{
+        height: 15vw;
+    }
+    .nav-header a{
+        display: none;
+    }
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #butoes-nav{
+        cursor: pointer;
+        display: block;
+        border: none;
+        background: #d9ffd942;
+        width: 22vw;
+        height: 7vw;
+        border-radius: 50% 50% 30% 30% ;
+        font-size: 2vw;
+        font-family: Jungle;
+        color: #378400;
+    }
+    #butoes-nav span{
+        font-size: 2.7vw;
+        font-weight: 100;
+        font-family: Jungle;
+    }
+    #butoes-nav:hover{
+        background-color: #c3ffc3a9;
+    }
+    #butoes-nav:focus{
+        background-color: #c3ffc3a9;
+    }
+    .login{
+        display: flex;
+    }
+    .login a{
+        height: 10vw;
+        width: 10vw;
+        display: flex;
+        flex-direction:column ;
+        border-radius: 100%;
+        font-size: 3.5vw;
+        background: none;
+        color: #378400e4;
+        margin-right: 5px;
+        position: relative;
+    }
+    .login a p{
+        font-size: 1.7vw;
+    }
+
     .fundo-apresentacao{
-        min-height: 100px;
+        
+    }
+    .apresentacao{
+        flex-direction: column;
+    }
+    .logo1{
+        text-align: center;
+    }
+    .logo1 img{
+        width: 40vw;
+        height: auto;
+    }
+    .txt-apresentacao p{
+        font-size: 2.5vw;
+    }
+    
+    .turismo-parte3{
+        width: 80vw;
+        height: 60vw;
+    }
+
+    .pacotes{
+        margin: 0 auto;
+        width: 90vw;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .pacotes h2{
+        font-size: 2.8vw;
+        text-align: center;
+        color: #fff;
+        text-shadow:  0 0 5px #000;
+    }
+    
+    .pacotes .destinos{
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        border: 3px solid #cbcbcb84;
+        border-radius: 10px;
     }
     .pacotes .destinos img{
         height: 60%;
@@ -530,5 +627,18 @@ footer h3{
         min-width: 0;
         max-width: 400px;
         border-radius: 10px;
-     }
+    }
+    .pacotes .destinos div{
+        backdrop-filter: blur(5px);
+        width: 40%;
+        max-width: 80%;
+        padding: 1.5vw;
+        margin: 2vw;
+    }
+    .pacotes .destinos div p{
+        font-size: 2vw;
+    }
+    .pacotes .destinos div span{
+        font-size: 1.3vw;
+    }
 }
